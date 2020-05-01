@@ -7,8 +7,8 @@ public class Testing {
 	public void givenThreeString_ComparedWithStringLengthObject_ReturnsMaximumCharacterdString()
 	{
 		MaximumNumber maximumNumber=new MaximumNumber();
-		String result = maximumNumber.findMaximumLengthOfString("Bananna","PineApple","Orange");
-		Assert.assertEquals("PineApple",result);
+		String result = maximumNumber.findMaximumLengthOfString("Bananna","PineApple","CustaredApple");
+		Assert.assertEquals("CustaredApple",result);
 	}
 
 }
