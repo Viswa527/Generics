@@ -1,31 +1,30 @@
 package Generics;
 
 public class MaximumNumber {
-	public static Float findMaximumNumber(Float numberOne,Float numberTwo,Float numberThree)
-	{
-		Float firstNumber = new Float(numberOne);
-		Float secondNumber = new Float(numberTwo);
-		Float thirdNumber = new Float(numberThree);
-		if(firstNumber.compareTo(secondNumber)>0)
+	public static <T extends Comparable> T findMaximumLengthOfString(String fruitOne,String fruitTwo,String fruitThree) {
+		Integer firstFruit = new Integer(fruitOne.length());
+		Integer secondFruit = new Integer(fruitTwo.length());
+		Integer thirdFruit= new Integer(fruitThree.length());
+		if(firstFruit.compareTo(secondFruit)>0)
 		{
-			if(firstNumber.compareTo(thirdNumber)>0)
+			if(firstFruit.compareTo(thirdFruit)>0)
 			{
-				return firstNumber;
+				return (T) fruitOne;
 			}
 			else
 			{
-				return thirdNumber;
+				return (T) fruitThree;
 			}
 		}
 		else
 		{
-			if(secondNumber.compareTo(thirdNumber)>0)
+			if(secondFruit.compareTo(thirdFruit)>0)
 			{
-				return secondNumber;
+				return (T) fruitTwo;
 			}
 			else
 			{
-				return thirdNumber;
+				return (T) fruitThree;
 			}
 		}
 	}
