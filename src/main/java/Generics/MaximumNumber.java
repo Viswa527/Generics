@@ -1,11 +1,11 @@
 package Generics;
 
 public class MaximumNumber {
-	public static int findMaximumNumber(int numberOne,int numberTwo,int numberThree)
+	public static Float findMaximumNumber(Float numberOne,Float numberTwo,Float numberThree)
 	{
-		Integer firstNumber = new Integer(numberOne);
-		Integer secondNumber = new Integer(numberTwo);
-		Integer thirdNumber = new Integer(numberThree);
+		Float firstNumber = new Float(numberOne);
+		Float secondNumber = new Float(numberTwo);
+		Float thirdNumber = new Float(numberThree);
 		if(firstNumber.compareTo(secondNumber)>0)
 		{
 			if(firstNumber.compareTo(thirdNumber)>0)
